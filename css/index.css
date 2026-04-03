@@ -1,3 +1,72 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* FUNDO */
+body {
+    background: linear-gradient(180deg, #f5f6fb, #dfe3f7);
+    color: #333;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+}
+
+header img {
+    width: 60px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #7b4fff, #2bb3ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+}
+
+/* HERO (parte principal) */
+body > div {
+    display: flex;
+    flex-direction: column; /* 👈 isso resolve */
+    align-items: center;
+    justify-content: center; /* opcional */
+    padding: 40px 60px;
+}
+
+body > div h1 {
+    font-size: 42px;
+    color: #6c4cff;
+    margin-bottom: 15px;
+}
+
+body > div p {
+    max-width: 500px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
 /* BOTÃO */
 #btn-coleta button {
     padding: 12px 25px;
@@ -65,6 +134,9 @@ body > div img {
     background: linear-gradient(90deg, #4f9bff, #8a4dff);
     color: white;
     font-size: 14px;
+}
+.card a:hover{
+    opacity: 0.8;
 }
 
 /* FOOTER */
