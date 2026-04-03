@@ -49,10 +49,18 @@ nav a {
 /* HERO (parte principal) */
 body > div {
     display: flex;
-    flex-direction: column; /* 👈 isso resolve */
+    flex-direction: row; /* 👈 coloca lado a lado */
     align-items: center;
-    justify-content: center; /* opcional */
+    justify-content: center;
+    gap: 40px; /* espaço entre texto e imagem */
     padding: 40px 60px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column; /* 👈 empilha */
+    gap: 10px;
+    max-width: 500px;
 }
 
 body > div h1 {
@@ -85,7 +93,7 @@ body > div p {
 
 /* IMAGEM HERO */
 body > div img {
-    width: 350px;
+    width: 400px;
 }
 
 /* CARDS */
