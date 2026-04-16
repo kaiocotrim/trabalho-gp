@@ -6,24 +6,40 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* FUNDO */
+/* 🌌 FUNDO */
 body {
-    background: linear-gradient(180deg, #f5f6fb, #dfe3f7);
-    color: #333;
+    color: #fff;
+    letter-spacing: 0.5px;
+
+    background: radial-gradient(circle at 25% 25%, #ff4d8d18, transparent 40%),
+                radial-gradient(circle at 75% 75%, #6c4cff18, transparent 40%),
+                radial-gradient(circle at 50% 60%, #2bb3ff12, transparent 50%),
+                #080810;
 }
 
-/* HEADER */
+/* 🔥 HEADER GLASS */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 60px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    background: rgba(10, 10, 20, 0.6);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
 header img {
     width: 60px;
 }
 
+/* LOGO */
 .logo {
     font-size: 24px;
     font-weight: bold;
@@ -34,6 +50,7 @@ header img {
     margin-left: 20px;
 }
 
+/* MENU */
 nav ul {
     display: flex;
     list-style: none;
@@ -42,53 +59,79 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #444;
+    color: #aaa;
     font-weight: 500;
+    transition: 0.3s;
 }
 
-/* HERO (parte principal) */
+nav a:hover {
+    color: #fff;
+    text-shadow: 0 0 8px rgba(123, 79, 255, 0.6);
+}
+
+/* HERO */
 body > div {
     display: flex;
-    flex-direction: row; /* 👈 coloca lado a lado */
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 40px; /* espaço entre texto e imagem */
-    padding: 40px 60px;
+    gap: 40px;
+    padding: 60px;
 }
 
+/* TEXTO */
 .text {
     display: flex;
-    flex-direction: column; /* 👈 empilha */
-    gap: 10px;
+    flex-direction: column;
+    gap: 15px;
     max-width: 500px;
 }
 
+/* TÍTULO HERO */
 body > div h1 {
     font-size: 42px;
-    color: #6c4cff;
-    margin-bottom: 15px;
+
+    background: linear-gradient(90deg, #8a4dff, #2bb3ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
+/* LINHA NEON */
+body > div h1::after {
+    content: "";
+    display: block;
+    width: 500px;
+    height: 3px;
+    margin-top: 10px;
+
+    background: linear-gradient(90deg, #ff4d8d, #6c4cff, #2bb3ff);
+    border-radius: 10px;
+}
+
+/* TEXTO */
 body > div p {
-    max-width: 500px;
     font-size: 16px;
-    margin-bottom: 20px;
+    color: #ccc;
 }
 
-/* BOTÃO */
+/* 🔘 BOTÃO HERO (UPGRADE) */
 #btn-coleta button {
     padding: 12px 25px;
     border: none;
     border-radius: 25px;
-    background: linear-gradient(90deg, #4f9bff, #8a4dff);
+
+    background: linear-gradient(90deg, #7b4fff, #2bb3ff);
     color: white;
     font-size: 16px;
     cursor: pointer;
+
     transition: 0.3s;
+    box-shadow: 0 0 15px rgba(123, 79, 255, 0.4);
 }
 
 #btn-coleta button:hover {
-    opacity: 0.8;
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(43, 179, 255, 0.6);
 }
 
 /* IMAGEM HERO */
@@ -96,7 +139,7 @@ body > div img {
     width: 400px;
 }
 
-/* CARDS */
+/* 🧊 CARDS */
 .Serviços {
     display: flex;
     justify-content: center;
@@ -104,47 +147,83 @@ body > div img {
     padding: 40px 60px;
 }
 
+/* 💎 CARD GLASS */
 .card {
-    background: white;
+    background: rgba(255, 255, 255, 0.05);
     padding: 25px;
     border-radius: 15px;
     width: 300px;
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
     text-align: left;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
     transition: 0.3s;
+
+    /* animação */
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s ease forwards;
 }
 
+/* ✨ HOVER PRO */
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) scale(1.02);
+
+    box-shadow: 
+        0 15px 50px rgba(0,0,0,0.5),
+        0 0 30px rgba(108, 76, 255, 0.2),
+        0 0 20px rgba(43, 179, 255, 0.1);
 }
 
+/* ANIMAÇÃO */
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* CARD IMG */
 .card img {
     width: 50px;
     margin-bottom: 15px;
 }
 
+/* TITULO CARD */
 .card h2 {
-    color: #6c4cff;
+    color: #8a4dff;
     margin-bottom: 10px;
 }
 
+/* TEXTO CARD */
 .card p {
     font-size: 14px;
     margin-bottom: 15px;
+    color: #ccc;
 }
 
-/* BOTÃO DOS CARDS */
+/* BOTÃO CARD */
 .card a {
     display: inline-block;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 20px;
-    background: linear-gradient(90deg, #4f9bff, #8a4dff);
+
+    background: linear-gradient(90deg, #7b4fff, #2bb3ff);
     color: white;
-    font-size: 14px;
+
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(123, 79, 255, 0.3);
 }
-.card a:hover{
-    opacity: 0.8;
+
+.card a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(43, 179, 255, 0.5);
 }
 
 /* FOOTER */
@@ -157,5 +236,10 @@ footer {
 
 footer a {
     text-decoration: none;
-    color: #555;
+    color: #777;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #fff;
 }
