@@ -5,80 +5,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReciclaTech</title>
+    <!-- Folha de estilos exclusiva da página inicial -->
     <link rel="stylesheet" href="css/index.css">
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <!-- Favicon do site -->
     <link rel="shortcut icon" href="img/logofavicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <header> 
-        <!--Cabeçalho -->
-        <div><img src="img/logoEmpresa.png" alt="Logo Empresarial"></div>
-        <div class="logo"> ReciclaTech </div>
-        <nav>
+
+    <!-- ==================== CABEÇALHO ==================== -->
+    <header>
+        <!-- Logo e nome da empresa -->
+        <div class="header-brand">
+            <img src="img/logoEmpresa.png" alt="Logo Empresarial">
+            <span class="logo">ReciclaTech</span>
+        </div>
+
+        <!-- Botão hamburger (visível apenas no mobile) -->
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Menu de navegação principal -->
+        <nav id="nav-menu">
             <ul>
                 <li><a href="#">Início</a></li>
-                <li><a href="#">Seja um apoiador</a></li>
-                <li><a href="quemSomos.html" >Quem somos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="apoiador.html">Seja um apoiador</a></li>
+                <li><a href="quemSomos.html">Quem somos</a></li>
+                <li><a href="pontosColeta.html">Pontos de Coleta</a></li>
+                <li><a href="contatos.html">Contato</a></li>
             </ul>
         </nav>
-
-    
     </header>
 
-    <!-- Aqui a baixo eu alterei para diferenciar a imagem do texto para organizar o css  -->
-    <div class="container">
+    <!-- ==================== SEÇÃO HERO ==================== -->
+    <!-- Banner principal com título, descrição e botão de ação -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Descarte de Eletrônicos</h1>
+            <p>
+                Contribua para um futuro sustentável descartando seus dispositivos eletrônicos de forma segura e consciente.
+            </p>
+            <div class="btn-coleta">
+                <button>Agendar Coleta</button>
+            </div>
+        </div>
+        <img src="img/dispositivos-danificados.png" alt="Imagem ilustrativa de dispositivos danificados">
+    </section>
 
-    <div class="text">
-        <h1>Descarte de Eletrônicos</h1>
-
-        <p>
-            Contribua para um futuro sustentável descartando seus dispositivos eletrônicos de forma segura e consciente.
-        </p>
-
-        <section id="btn-coleta">
-            <button>Agendar Coleta</button>
-        </section>
-    </div>
-
-    <img src="img/dispositivos-danificados.png" alt="Imagem ilustrativa de dispositivos-danificados">
-
-</div>
-            
-    </div>
-    <section class="Serviços"> <!--Cards-->
+    <!-- ==================== CARDS DE SERVIÇOS ==================== -->
+    <!-- Três cards com os principais serviços oferecidos -->
+    <section class="servicos">
+        <!-- Card 1 - Coleta -->
         <div class="card">
             <img src="img/Logoentrega.png" alt="Logo Caminhão">
             <h2>Coleta de Eletrônicos</h2>
             <p>Agende uma coleta e nós retiramos seus dispositivos eletrônico antigos para reciclagem.</p>
-            <a href="#">Saiba Mais</a>
-
+            <a href="sevicos.html">Saiba Mais</a>
         </div>
 
+        <!-- Card 2 - Reciclagem -->
         <div class="card">
             <img src="img/logoRecicla.png" alt="Logo Reciclagem">
             <h2>Reciclagem Segura</h2>
             <p>Processamos os eletrônicos de forma segura e ecológica, reaproveitando materiais.</p>
-            <a href="#">Saiba Mais</a>
-
+            <a href="sevicos.html">Saiba Mais</a>
         </div>
 
+        <!-- Card 3 - Pontos de Descarte -->
         <div class="card">
             <img src="img/logoGps.png" alt="Logo GPS">
             <h2>Pontos de Descarte</h2>
             <p>Encontre locais de descarte de eletrônicos perto de você e descarte com facilidade.</p>
-            <a href="#">Saiba Mais</a>
+            <a href="pontosColeta.html">Saiba Mais</a>
+        </div>
+    </section>
 
+    <!-- ==================== GALERIA - COMO FUNCIONA ==================== -->
+    <!-- Seção visual com cards alternados mostrando o processo -->
+    <section class="galeria">
+        <h2>Como funciona na prática</h2>
+
+        <!-- Etapa 1 -->
+        <div class="foto-card">
+            <div class="foto-placeholder ">♻️</div>
+            <div class="foto-info">
+                <h3>Coleta Responsável</h3>
+                <p>Nossa equipe realiza a coleta dos eletrônicos diretamente no local agendado.</p>
+            </div>
         </div>
 
+        <!-- Etapa 2 -->
+        <div class="foto-card">
+            <div class="foto-placeholder azul"><img src="" alt=""></div>
+            <div class="foto-info">
+                <h3>Triagem e Separação</h3>
+                <p>Cada item é separado por categoria para garantir o tratamento correto.</p>
+            </div>
+        </div>
+
+        <!-- Etapa 3 -->
+        <div class="foto-card">
+            <div class="foto-placeholder roxo">🌍</div>
+            <div class="foto-info">
+                <h3>Resultado Sustentável</h3>
+                <p>Materiais reaproveitados e menor impacto ambiental para o planeta.</p>
+            </div>
+        </div>
     </section>
-    <footer> <!--Rodapé-->
-        <p><a href="#">E-mail</a></p>
-        <p><a href="#">Telefone</a></p>
-        <p><a href="#">Localização</a></p>
-    </footer>
-    <script src="codigo.js"></script>
+
+    <!-- Script do menu hamburger -->
+    <script src="js/codigo.js"></script>
 </body>
 
 </html>

@@ -4,27 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Folha de estilos compartilhada entre as páginas internas -->
     <link rel="stylesheet" href="css/quemSomos.css">
-    <title>ReciclaTech</title>
+    <title>Quem Somos - ReciclaTech</title>
+    <!-- Favicon do site -->
     <link rel="shortcut icon" href="img/logofavicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <header> <!--Cabeçalho -->
-        <div><img src="img/logoEmpresa.png" alt="Logo Empresarial"></div>
-        <div class="logo">ReciclaTech </div>
-        <nav>
+
+    <!-- ==================== CABEÇALHO ==================== -->
+    <header>
+        <!-- Logo e nome da empresa -->
+        <div class="header-brand">
+            <img src="img/logoEmpresa.png" alt="Logo Empresarial">
+            <span class="logo">ReciclaTech</span>
+        </div>
+
+        <!-- Botão hamburger (visível apenas no mobile) -->
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Menu de navegação principal -->
+        <nav id="nav-menu">
             <ul>
                 <li><a href="index.html">Início</a></li>
-                <li><a href="#">Seja um apoiador</a></li>
-                <li><a href="#">Quem somos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="apoiador.html">Seja um apoiador</a></li>
+                <li><a href="quemSomos.html">Quem somos</a></li>
+                <li><a href="pontosColeta.html">Pontos de Coleta</a></li>
+                <li><a href="contatos.html">Contato</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- ==================== TÍTULO E DESCRIÇÃO ==================== -->
     <h1>Quem somos</h1>
 
+    <!-- Texto introdutório sobre a empresa -->
     <p>A ReciclaTech é uma empresa especializada na reciclagem e no descarte correto de resíduos eletrônicos. Foi
         fundada em 9 de fevereiro de 2026, na cidade de São Paulo, por 10 jovens residentes do bairro da Liberdade, no
         centro da capital, comprometidos com a preservação do meio ambiente e com o futuro das próximas gerações.
@@ -36,37 +55,36 @@
         que seguem normas ambientais, priorizando a reutilização de componentes e o reaproveitamento de matérias-primas,
         evitando que substâncias tóxicas contaminem o solo e a água.</p>
 
+    <!-- ==================== MISSÃO, VISÃO E VALORES ==================== -->
     <section class="Sobre">
+        <!-- Card - Missão -->
         <div class="Sessao">
             <img src="img/LogoMissao.png" alt="Logo Missão">
             <h2>Missão</h2>
             <p>Atuar na coleta e reciclagem de resíduos eletrônicos, garantindo a destinação ambientalmente correta e
-                contribuindo para a preservação dos recursos naturais.
-            </p>
-
-
+                contribuindo para a preservação dos recursos naturais.</p>
         </div>
 
+        <!-- Card - Visão -->
         <div class="Sessao">
             <img src="img/LogoVisao.png" alt="Logo Visão">
             <h2>Visão</h2>
             <p>Ser parte da mudança, ajudando a reduzir a poluição e proteger o planeta através da reciclagem correta de
                 eletrônicos.</p>
-
-
         </div>
 
+        <!-- Card - Valores -->
         <div class="Sessao">
             <img src="img/LogoValores.png" alt="Logo Valores">
             <h2>Valores</h2>
             <p>Compromisso ambiental, ética, transparência, responsabilidade, sustentabilidade, qualidade e respeito à
                 vida.</p>
-            <br>
         </div>
-
     </section>
 
+    <!-- ==================== DETALHES DOS SERVIÇOS ==================== -->
     <section class="Cards">
+        <!-- Card - Coleta -->
         <div class="Sessao">
             <h2>Coleta de Eletrônicos</h2>
             <p>Realizamos a coleta de resíduos eletrônicos de forma segura e organizada, atendendo empresas,
@@ -74,6 +92,8 @@
                 conosco pelos nossos canais de atendimento. Nosso objetivo é facilitar o descarte correto e evitar que
                 esses materiais sejam descartados de forma irregular.</p>
         </div>
+
+        <!-- Card - Reciclagem -->
         <div class="Sessao">
             <h2>Reciclagem Segura</h2>
             <p>Após a coleta, os materiais passam por uma triagem técnica, onde são separados por categoria
@@ -85,39 +105,77 @@
                 destinado corretamente a empresas licenciadas, seguindo normas ambientais. Assim, garantimos um
                 descarte responsável, seguro e com menor impacto ao meio ambiente.</p>
         </div>
-        <div class="Sessao">
-            <h2>Pontos de Descartes</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.216479536528!2d-46.640679723984995!3d-23.560667361568004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59aa5c30eedf%3A0x3ab50648e11f6a9c!2sFMU%20%7C%20FIAM%20FAAM%20-%20Campus%20Liberdade!5e0!3m2!1spt-BR!2sbr!4v1775443428201!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
 
+        <!-- Card - Mapa com pontos de descarte -->
+        <div class="Sessao">
+            <h2>Pontos de Descarte</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.216479536528!2d-46.640679723984995!3d-23.560667361568004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59aa5c30eedf%3A0x3ab50648e11f6a9c!2sFMU%20%7C%20FIAM%20FAAM%20-%20Campus%20Liberdade!5e0!3m2!1spt-BR!2sbr!4v1775443428201!5m2!1spt-BR!2sbr"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </section>
+
+    <!-- ==================== TIPOS DE RECICLAGEM ==================== -->
     <section class="Cards">
         <h2>Conheça nossos tipos de reciclagem</h2>
+
         <article>
             <h3>Informática</h3>
             <p>Computadores, notebooks, monitores, impressoras, periféricos, celulares, tablets, carregadores,
                 placas-mãe, circuitos, componentes eletrônicos, cabos e fontes</p>
         </article>
+
         <article>
             <h3>Cabos e Metais</h3>
             <p>Placas-mãe, circuitos e componentes eletrônicos.</p>
         </article>
+
         <article>
             <h3>Eletrodomésticos</h3>
             <p>Equipamentos eletrônicos de pequeno e médio porte.</p>
         </article>
+
         <article>
             <h3>Reciclagem para Empresas</h3>
             <p>Soluções para empresas, com coleta e descarte correto de equipamentos eletrônicos, garantindo
                 responsabilidade ambiental e conformidade no descarte.</p>
         </article>
-
-
-
-
-
-
     </section>
 
+    <!-- ==================== GALERIA - EQUIPE EM AÇÃO ==================== -->
+    <section class="galeria">
+        <h2>Nossa Equipe em Ação</h2>
+
+        <!-- Card 1 - Centro de reciclagem -->
+        <div class="foto-card">
+            <div class="foto-placeholder verde">🏭</div>
+            <div class="foto-info">
+                <h3>Centro de Reciclagem</h3>
+                <p>Nosso centro de processamento localizado no bairro da Liberdade, São Paulo.</p>
+            </div>
+        </div>
+
+        <!-- Card 2 - Equipe -->
+        <div class="foto-card">
+            <div class="foto-placeholder azul">👥</div>
+            <div class="foto-info">
+                <h3>Equipe ReciclaTech</h3>
+                <p>10 jovens comprometidos com a preservação do meio ambiente e o futuro sustentável.</p>
+            </div>
+        </div>
+
+        <!-- Card 3 - Materiais -->
+        <div class="foto-card">
+            <div class="foto-placeholder roxo">📦</div>
+            <div class="foto-info">
+                <h3>Materiais Processados</h3>
+                <p>Eletrônicos triados e prontos para o reaproveitamento de componentes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script do menu hamburger -->
+    <script src="js/codigo.js"></script>
+</body>
 
 </html>
