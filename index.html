@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - ReciclaTech</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav-wrap">
+            <a href="index.html" class="header-brand">
+                <div class="brand-mark">R</div>
+                <span class="logo">Recicla<span class="text-gradient">Tech</span></span>
+            </a>
+            <button class="menu-toggle" aria-label="Abrir menu" onclick="document.getElementById('nav-menu').classList.toggle('open')">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html" style="color:var(--text)">Início</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="pontosColeta.html">Pontos de Coleta</a></li>
+                    <li><a href="quemSomos.html">Quem Somos</a></li>
+                    <li><a href="apoiador.html">Apoiador</a></li>
+                    <li><a href="contato.html" class="cta">Agendar Coleta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <span class="badge">Operando em São Paulo · SP</span>
+            <h1>Descarte de eletrônicos <span class="text-gradient">sem deixar rastro no planeta.</span></h1>
+            <p>Transformamos seu e-waste em recurso. Coleta inteligente, destruição segura de dados e reciclagem certificada para empresas e residências.</p>
+            <div class="btn-coleta">
+                <a href="contato.html" class="btn-primary">Agendar Coleta →</a>
+                <a href="pontosColeta.html" class="btn-secondary">Ver Pontos</a>
+            </div>
+            <div class="hero-stats">
+                <div><div class="num text-gradient">+500t</div><div class="lbl">E-waste reciclado</div></div>
+                <div><div class="num text-gradient">20+</div><div class="lbl">Pontos em SP</div></div>
+                <div><div class="num text-gradient">98%</div><div class="lbl">Reaproveitamento</div></div>
+            </div>
+        </div>
+        <div>
+            <div style="aspect-ratio:1;background:var(--gradient);border-radius:28px;display:grid;place-items:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:3rem;color:#fff;box-shadow:var(--shadow-glow);opacity:0.92">
+                ♻ ReciclaTech
+            </div>
+        </div>
+    </section>
+
+    <section class="servicos">
+        <div class="card">
+            <img src="data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22white%22 stroke-width=%222%22><path d=%22M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2%22/><path d=%22M15 18H9%22/><path d=%22M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14%22/><circle cx=%2217%22 cy=%2218%22 r=%222%22/><circle cx=%227%22 cy=%2218%22 r=%222%22/></svg>" alt="">
+            <h2>Coleta Residencial</h2>
+            <p>Agende a retirada de eletrônicos diretamente da sua casa, com segurança e organização.</p>
+            <a href="servicos.html">Saiba mais →</a>
+        </div>
+        <div class="card">
+            <img src="data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22white%22 stroke-width=%222%22><rect x=%224%22 y=%224%22 width=%2216%22 height=%2216%22 rx=%222%22/><rect x=%229%22 y=%229%22 width=%226%22 height=%226%22/><path d=%22M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3%22/></svg>" alt="">
+            <h2>Coleta Empresarial</h2>
+            <p>Soluções personalizadas para empresas, com rastreabilidade e relatórios de impacto.</p>
+            <a href="servicos.html">Saiba mais →</a>
+        </div>
+        <div class="card">
+            <img src="data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22white%22 stroke-width=%222%22><path d=%22M20 13c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V5l8-3 8 3z%22/><path d=%22m9 12 2 2 4-4%22/></svg>" alt="">
+            <h2>Destruição de Dados</h2>
+            <p>Eliminamos HDs e mídias com certificação total — conformidade LGPD garantida.</p>
+            <a href="servicos.html">Saiba mais →</a>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="foot-grid">
+            <div>
+                <a href="index.html" class="header-brand" style="margin-bottom:1rem">
+                    <div class="brand-mark">R</div>
+                    <span class="logo">Recicla<span class="text-gradient">Tech</span></span>
+                </a>
+                <p style="color:var(--muted);font-size:0.9rem;max-width:340px;margin-top:0.75rem">
+                    Reciclagem e descarte consciente de eletrônicos em São Paulo. Tecnologia a serviço de um futuro mais sustentável.
+                </p>
+            </div>
+            <div>
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="pontosColeta.html">Pontos de Coleta</a></li>
+                    <li><a href="quemSomos.html">Quem Somos</a></li>
+                    <li><a href="apoiador.html">Apoiador</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contato</h4>
+                <ul>
+                    <li>contato@reciclatech.com</li>
+                    <li>(11) 3333-1000</li>
+                    <li>Liberdade, São Paulo — SP</li>
+                </ul>
+            </div>
+        </div>
+        <p class="copy">© 2026 ReciclaTech. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
